@@ -245,119 +245,147 @@ thing if one of them fails you can cut
 
 50
 00:02:09,580 --> 00:02:12,610
-切换到另外一台
+切换到另外一台  另外一个原因是
 over to the other one another is that
 
 51
 00:02:12,610 --> 00:02:15,070
+有些任务自然而然的需要
 some problems are just naturally spread
 
 52
 00:02:15,070 --> 00:02:17,560
+在空间中传送
 out in space like you know you want to
 
 53
 00:02:17,560 --> 00:02:19,420
+如果你想在银行间转账或者其他业务
 do interbank transfers of money or
 
 54
 00:02:19,420 --> 00:02:21,820
-something well you know bank a has this
+银行A的服务器
+something well you know bank A has this
 
 55
 00:02:21,820 --> 00:02:23,980
+在纽约 而银行B的服务器
 computer in New York City and Bank B as
 
 56
 00:02:23,980 --> 00:02:26,110
+却在伦敦
 this computer in London you know you
 
 57
 00:02:26,110 --> 00:02:27,790
+所以就需要一些方式
 just have to have some way for them to
 
 58
 00:02:27,790 --> 00:02:29,709
+来让他们彼此通信和协作
 talk to each other and cooperate in
 
 59
 00:02:29,709 --> 00:02:31,330
+来完成诸多的业务
 order to carry that out so there's some
 
 60
 00:02:31,330 --> 00:02:36,310
+所以有很多硬件的原因 
 natural sort of physical reasons systems
 
 61
 00:02:36,310 --> 00:02:37,360
+系统内部的硬件就是分布式的
 that are inherently physically
 
 62
 00:02:37,360 --> 00:02:40,000
+最后一个原因
 distributed for the final reason that
 
 63
 00:02:40,000 --> 00:02:42,040
+人们需要这类架构的原因是
 people build this stuff is in order to
 
 64
 00:02:42,040 --> 00:02:44,320
+出于安全考虑
 achieve some sort of security goal so
 
 65
 00:02:44,320 --> 00:02:46,660
+比如说有一些你不信任的代码
 often by if there's some code you don't
 
 66
 00:02:46,660 --> 00:02:49,090
+或者你需要与一些其他人交互
 trust or you know you need to interact
 
 67
 00:02:49,090 --> 00:02:50,920
+但是他们可能不会
 with somebody but you know they may not
 
 68
 00:02:50,920 --> 00:02:53,170
+立刻展现出恶意  也可能
 be immediate malicious or maybe their
 
 69
 00:02:53,170 --> 00:02:55,420
+他们的代码有bug 所以你不想
 code has bugs in it so you don't want to
 
 70
 00:02:55,420 --> 00:02:57,160
+相信这些代码  你可能会想
 have to trust it you may want to split
 
 71
 00:02:57,160 --> 00:02:59,350
+把彼此的计算分隔开
 up the computation so you know your
 
 72
 00:02:59,350 --> 00:03:01,000
+你运行你的
 stuff runs over there and that computer
 
 73
 00:03:01,000 --> 00:03:02,500
+我运行我的
 my stuff runs here on this computer and
 
 74
 00:03:02,500 --> 00:03:04,150
+他们只需要彼此通信
 they only talk to each other to some
 
 75
 00:03:04,150 --> 00:03:06,580
+通过一些严格规定的网络协议
 sort of narrow narrowly defined network
 
 76
 00:03:06,580 --> 00:03:10,330
+假设我们可能会担心
 protocol assuming we may be worried
 
 77
 00:03:10,330 --> 00:03:13,570
+安全问题
 about you know security and that's
 
 78
 00:03:13,570 --> 00:03:14,980
+
 achieved by splitting things up into
 
 79
